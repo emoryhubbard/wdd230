@@ -12,4 +12,4 @@ let modMinute = lastModified.getMinutes();
 let modSecond = lastModified.getSeconds();
 
 document.getElementById("update-line").innerHTML =
-  `Last Updated: ${modMonth}/${modDay}/${modYear} ${modHour}:${modMinute}:${modSecond}`
+  `Last Updated: ${modMonth}/${modDay}/${modYear} ${modHour}:${modMinute}:${modSecond}`;
