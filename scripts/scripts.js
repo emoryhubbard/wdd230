@@ -16,4 +16,4 @@ let modMinute = padWithZeroes(lastModified.getMinutes(), 2);
 let modSecond = padWithZeroes(lastModified.getSeconds(), 2);
 
 document.getElementById("update-line").innerHTML =
-  `Last Updated: ${modMonth}/${modDay}/${modYear} ${modHour}:${modMinute}:${modSecond}`;
+  `Last Update: ${modMonth}/${modDay}/${modYear} ${modHour}:${modMinute}:${modSecond}`;
