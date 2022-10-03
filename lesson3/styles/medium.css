@@ -1,0 +1,43 @@
+@media (min-width: 32.5em) {
+.design-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "rep con"
+        "rep con"
+        "rep con"
+        "rep con"
+        "rep con"
+        "rep con"
+        "vis vis"
+        "vis vis"
+        "vis vis"
+        "vis vis";
+}
+
+.target-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "rep ."
+        "con vis"
+        "con vis"
+        "con vis"
+        "con vis"
+        "con vis"
+        "con vis";
+}
+
+#purpose-grid {
+    grid-area: rep;
+}
+
+#domain-grid {
+    grid-area: con;
+}
+
+#logo-grid {
+    grid-area: vis;
+}
+
+}
