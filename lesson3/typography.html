@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Typography</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        
+    </head>
+    <body>
+    <header>
+        <h1>White Oak Chamber Site Plan</h1>
+        <h2>Emory D. Hubbard</h2>
+    </header>
+    <nav>
+        <ul class="top-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="target-audience.html">Target Audience</a></li>
+          <li><a href="color-scheme.html">Color Scheme</a></li>
+          <li><a href="typography.html">Typography</a></li>
+        </ul>
+    </nav>
+    
+    <main class="target-grid">
+        <div class="principle-grid" id="purpose-grid">
+            <h3>Typography</h3>
+            <p>The major considerations for choosing type for the White Oak Chamber site were finding fonts that were not overly common, yet readable, modern, and non-distracting to visitors. Two were selected, one of which will be used for headings, and another for paragraph-level information, as well as other related needs. Both fonts were chosen from google's font API system, accesible from the following site:</p>
+            <a href="https://fonts.google.com/">fonts.google.com</a>
+        </div>
+        <div class="principle-grid" id="domain-grid">
+            <h3>ABeeZee Font</h3>
+            <p>The ABeeZee Font was chosen to be used for the headings, accents, and other areas of emphasis on the site. It has a unique character that can help the site remain distinctive, yet is not distracting to the viewer. To use it, include the following import statement, and the following name for the font-family when you need it:</p>
+            <p>@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Mukta+Malar&display=swap');
+            </p> 
+            <p>font-family: 'ABeeZee', sans-serif;</p>
+        </div>
+        <div class="principle-grid" id="logo-grid">
+            <h3>Mukta Malar Font</h3>
+            <p>The Mukta Malar Font was chosen to be used for the paragraphs, some accents, and other paragraph-level content on the site. Whenever there are larger lines or blocks of text this font will generally be used for readability. It is only slightly distinctive. To use it, include the following import statement, and the following name for the font-family when you need it:</p>    
+            <p>@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Mukta+Malar&display=swap');
+            </p>
+            <p>font-family: 'Mukta Malar', sans-serif;</p>
+        </div>
+
+        <div class="principle-grid" id="first-grid">
+            <h3 id="example-heading">Example ABeeZee Heading</h3>
+            <p id="example-paragraph">This is example Mukta Malar paragraph text. Headings, paragraphs, and their various combinations on the White Oak Chamber site will use these two fonts.</p>    
+        </div>
+
+        <!--
+            @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Mukta+Malar&display=swap');
+        
+            font-family: 'ABeeZee', sans-serif;
+
+            font-family: 'Mukta Malar', sans-serif;
+        
+        -->
+
+    </main>
+    <footer>
+        <div class="footer-grid">
+        <div class="copyright-div"><p id="copyright-line"><p></div>
+        <script src="scripts/scripts.js"></script>
+        </div>
+    </footer>
+    </body>
+</html>
