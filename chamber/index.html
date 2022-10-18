@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>White Oak Chamber of Commerce</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/scripts.js"></script>
+    </head>
+    <body>
+    <header>
+        <div class="logo-box">
+            <a href="#"><img class="header-logo" src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
+            <div>
+                <h1>White Oak</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="primary">
+            <ul>
+                <li class="page-link"><a href="#">Discover</a></li>
+                <li class="page-link"><a href="#">Directory</a></li>
+                <li class="page-link"><a href="#">Join</a></li>
+                <li class="page-link"><a href="#">Contact</a></li>
+            </ul>
+        </nav> 
+        <div class="social-box">
+            <a class="fb-logo" href="#">
+                <img class="social-logo" src="images/facebook.png" alt= "Facebook Logo">
+            </a>
+                <a href="#">
+                <img class="social-logo" src="images/twitter.png" alt= "Twitter Logo">
+            </a>
+        </div>
+        <div class="has-burger"><a class="burger-button" onclick="openDropDown()">☰</a></div>
+        <div id="date-div"><p>Placeholder</p></div>
+        <script>setDate()</script>
+        <nav class="drop-down">
+            <ul>
+                <a class="has-button" onclick="closeDropDown()">×</a>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/shopping.jpg" alt="White Oak Mall">
+            <div class="hero-grid">
+                <h2>Welcome to White Oak</h2>
+            </div>
+        </div>
+        <div class="event">Event</div>
+        <div class="weather">Weather</div>
+        <div class="news">News Release</div>
+        <div class="join">Join</div>
+        <div class="spotlight-div">
+            <div>Spotlight 1</div>
+            <div>Spotlight 2</div>
+            <div>Spotlight 3</div>
+        </div>
+    </main>
+    <footer>
+            <a class="footer-logo" href="#"><img src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
+            <div class="address">
+                <p>White Oak Chamber of Commerce</p>
+                <p>11215 Oak Leaf Dr</p>
+                <p>Silver Spring, MD 20901</p>
+            </div>
+            <div class="contact">
+                <p>info@whiteoakchamber.com</p>
+                <p>(555) 202-1707</p>
+                <p>📍 Location Map</p>
+            </div>
+        <hr>
+        <ul class="bottom-line">
+            <li id="copyright"></li>
+            <script>setCopyright()</script>
+            <li class="my-name">Emory D. Hubbard</li>
+            <li>WDD 230 Project</li>
+            <li id="update"></li>
+            <script>setUpdate()</script>
+        </ul>
+    </footer>
+    </body>
+</html>
