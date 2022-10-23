@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+}
+
+.header-grid, .footer-grid {
+  background-color: #2E5984; /*#0077b6;*/
+  box-shadow: 5px 5px 5px #999999;
+}
+
+.header-grid {
+    display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.img-box {
+  display: grid;
+  justify-items: left;
+  align-items: center;
+  padding-left: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100px;
+  box-shadow: 5px 5px 5px #1E3F66
+}
+.name-box {
+  display: grid;
+  justify-items: left;
+  align-items: center;
+  padding-top: 3em;
+}
+.has-canvas {
+  position: relative;
+  width: 10em;
+  height: 10em;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+}
+.toe-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(213, 213, 129);
+  opacity: .5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: .25em;
+}
+.toe-grid div {
+  /*background-color: red;*/
+  opacity: .25;
+}
+
+.body-note {
+  font-size: .5em;
+}
+
+#update-line {
+  color: #EEDC82;
+}
+#copyright-line {
+  color: white;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 1fr;
+}
+.update-div {
+  display: grid;
+  justify-items: left;
+}
+.copyright-div {
+  padding-left: 2em;
+}
