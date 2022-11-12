@@ -1,11 +1,38 @@
+var images =[]; //global variables for lazy loading callback
+var observer;
 
 setDate();
 setCopyright();
 setUpdate();
+setLastVisit();
 displayBanner();
+//debugEventBox();
+initializeImages();
+lazyLoad();
+//testSetSrcset();
 
-function padWithZeroes(number, zeroQuantity) {
-  return number.toString().padStart(zeroQuantity, '0');
+/*function testSetSrcset() {
+    image = document.querySelector(".pic-test");
+    image.srcset = image.getAttribute("data-src");
+}*/
+
+/*function debugEventBox() {
+    const mainDivs = document.querySelectorAll("main>div");
+    const eventBoxes = document.querySelectorAll(".yada");
+
+    console.log(mainDivs);
+    console.log(eventBoxes);
+}*/
+
+function setDate() {
+    let today = new Date();
+    let todayDay = today.getDate();
+    let todayDayName = getDayName(today.getDay()+1);
+    let todayMonthName = getMonthName(today.getMonth()+1);
+    let todayYear = today.getFullYear();
+
+    document.querySelector("#date-div p").innerHTML =
+    `${todayDayName}, ${todayDay} ${todayMonthName} ${todayYear}`;
 }
 
 function getMonthName(number) {
@@ -37,6 +64,7 @@ function getMonthName(number) {
     }
     return month;
 }
+
 function getDayName(number) {
     day = "Sunday";
     switch (number) {
@@ -63,6 +91,7 @@ function setCopyright() {
     let year = date.getFullYear();
     document.getElementById("copyright").innerHTML = `&copy ${year} White Oak Chamber`;
 }
+
 function setUpdate() {
     let lastModified = new Date(document.lastModified);
     let modDay = lastModified.getDate();
@@ -76,16 +105,76 @@ function setUpdate() {
     `Last Updated: ${modMonth}/${modDay}/${modYear} ${modHour}:${modMinute}:${modSecond}`;
 }
 
-function setDate() {
+function padWithZeroes(number, zeroQuantity) {
+  return number.toString().padStart(zeroQuantity, '0');
+}
+
+function setLastVisit() {
+    if (localStorage.lastVisitTimeStamp == null)
+        localStorage.lastVisitTimeStamp = new Date().getTime();
+    timeStamp = new Date().getTime();
+
+    deltaTimeMilliseconds =
+        timeStamp - parseInt(localStorage.lastVisitTimeStamp);
+    deltaTimeSeconds = deltaTimeMilliseconds / 1000;
+    deltaTimeMinutes = deltaTimeSeconds / 60;
+    deltaTimeHours = deltaTimeMinutes / 60;
+    deltaTimeDays = Math.round(deltaTimeHours / 24);
+    console.log(`${deltaTimeSeconds}`);
+
+    const lastVisit = document.querySelector("#last-visit");
+    lastVisit.innerHTML = `${deltaTimeDays}`;
+    localStorage.lastVisitTimeStamp = timeStamp;
+}
+
+function displayBanner() {
     let today = new Date();
-    let todayDay = today.getDate();
     let todayDayName = getDayName(today.getDay()+1);
-    let todayMonthName = getMonthName(today.getMonth()+1);
-    let todayYear = today.getFullYear();
-
-
-    document.querySelector("#date-div p").innerHTML =
-    `${todayDayName}, ${todayDay} ${todayMonthName} ${todayYear}`;
+    if (todayDayName == "Monday" || todayDayName == "Tuesday") {
+        document.querySelector(".banner").style.display = "block";
+    }
+}
+function initializeImages() {
+    let imageNodeList = document.querySelectorAll("img[data-src]");
+    images = Array.from(imageNodeList);
+}
+function lazyLoad() {
+   if ("IntersectionObserver" in window) {
+        loadWhileScrolling();
+    }
+    else {
+        loadAfterPage();
+    }
+}
+function loadWhileScrolling() {
+    observer = new IntersectionObserver(checkForIntersections);
+    images.map(observeImage);
+}
+function checkForIntersections(events, observer) {
+    events.map(respondToIntersection);
+}
+function respondToIntersection(e) {
+    image = e.target;
+    if (e.isIntersecting) {
+        console.log("image intersecting and loading")
+        loadImage(image);
+        observer.unobserve(image);
+    }
+}
+function observeImage(image) {
+    observer.observe(image);
+}
+function loadAfterPage() {
+    images.map(loadImage);
+}
+function loadImage(image) {
+    image.src = image.getAttribute("data-src"); //can't access .data-src directly
+    image.onload = unblurImage;      //since it has a hyphen
+    
+}
+function unblurImage(e) {
+    image = e.target;
+    image.classList.add("unblur");
 }
 
 function openDropDown() {
@@ -94,13 +183,6 @@ function openDropDown() {
 
 function closeDropDown() {
     document.querySelector(".drop-down").style.display = "none";
-}
-function displayBanner() {
-    let today = new Date();
-    let todayDayName = getDayName(today.getDay()+1);
-    if (todayDayName == "Monday" || todayDayName == "Tuesday") {
-        document.querySelector(".banner").style.display = "block";
-    }
 }
 
 

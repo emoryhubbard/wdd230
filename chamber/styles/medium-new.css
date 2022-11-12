@@ -1,0 +1,133 @@
+@media (min-width: 520px) {
+    .has-burger {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .header {
+        grid-template-areas:
+        "lb lb lb lb lb sb bb"
+        "up up up up up up up";
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .social-box {
+        margin-left: 20em;
+    }
+    .index-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "hero hero hero"
+        "news news news"
+        "spot spot spot"
+        "join join join"
+        "event weather weather";
+    }
+    
+    /*try .event-box and .event*/
+    .default-discover-grid {
+        display: grid;
+        justify-items: center;
+    }
+    .debug-div {
+        text-align: center;
+        color: red;
+        background-color: blue;
+        width: 10em;
+        height: 2em;
+    }
+    .discover-hero {
+        display: grid;
+        justify-items: center;
+    }
+    .discover-hero picture {
+        display: grid;
+        justify-items: center;
+    }
+    .small-discover-grid {
+        display: none;
+    }
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .discover-pictures-grid {
+        display: grid;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+    .discover-info-grid {
+        display: grid;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+    .discover-picture-box img:hover {
+        box-shadow: 0 0 50px #A6AB7B
+    }
+    .header-logo {
+        width: 64px;
+    }
+    .social-logo {
+        width: 48px;
+    }
+    .join {
+        grid-area: join;
+        display: block;
+    }
+    .index-hero {
+        grid-area: hero;
+    }
+    .news {
+        grid-area: news;
+    }
+    .spotlight-div {
+        grid-area: spot;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .event {
+        grid-area: event;
+    }
+    .weather {
+        grid-area: weather;
+    }
+    footer {
+        display: grid;
+        grid-template-areas:
+        "log ad ad . con"
+        "hr hr hr hr hr"
+        ". up up up ."
+        ". up up up .";
+        padding: 1em;
+    }
+    .footer-logo {
+        grid-area: log;
+        padding: 0em;
+        padding-top: 1em;
+    }
+    .address {
+        grid-area: ad;
+        display: grid;
+        align-items: center;
+        justify-items: left;
+        margin: 1.5em;
+    }
+    .contact {
+        grid-area: con;
+    }
+    .bottom-line {
+        grid-area: up;
+    }
+    .bottom-line li {
+        list-style-type: none;
+        display: inline;
+    }
+    .bottom-line li:not(:first-child):before {
+        content: " | ";
+    }
+    hr {
+        grid-area: hr;
+    }
+    }

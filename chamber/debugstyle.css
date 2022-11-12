@@ -1,0 +1,18 @@
+.debug-div {
+    text-align: center;
+    color: red;
+    background-color: blue;
+    width: 10em;
+    height: 2em;
+}
+main {
+    display: grid;
+    justify-items: center;
+}
+picture {
+    width: 100%;
+}
+picture * {
+    width: 100%;
+    height: auto;
+}

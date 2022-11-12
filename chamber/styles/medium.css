@@ -15,7 +15,7 @@ h1 {
 .social-box {
     margin-left: 20em;
 }
-main {
+.index-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -24,6 +24,54 @@ main {
     "spot spot spot"
     "join join join"
     "event weather weather";
+}
+
+/*try .event-box and .event*/
+.default-discover-grid {
+    display: grid;
+    justify-items: center;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.debug-div {
+    text-align: center;
+    color: red;
+    background-color: blue;
+    width: 10em;
+    height: 2em;
+}
+.discover-hero {
+    width: 100%;
+    height: auto;
+}
+.discover-hero picture {
+    display: grid;
+    justify-items: center;
+}
+.small-discover-grid {
+    display: none;
+}
+.medium-and-large-discover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 1em;
+    margin: 1em;
+}
+.discover-picture-grid {
+    display: grid;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.discover-info-grid {
+    display: grid;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.discover-info-grid .event-box {
+    margin-top: 0;
+}
+.discover-picture-box img:hover {
+    box-shadow: 0 0 50px #A6AB7B
 }
 .header-logo {
     width: 64px;
@@ -35,10 +83,10 @@ main {
     grid-area: join;
     display: block;
 }
-.hero {
+.index-hero {
     grid-area: hero;
 }
-.news {
+.index-news {
     grid-area: news;
 }
 .spotlight-div {
@@ -46,7 +94,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.event {
+.index-event {
     grid-area: event;
 }
 .weather {

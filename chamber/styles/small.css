@@ -4,10 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800;900&display=swap');
 
+:root {
+  --white-oak-blue: #213458;
+  --white-oak-yellow: #FFFA93;
+}
+
 * {
   font-family: "Quicksand", sans-serif;
 }
-
 
 header {
   display: grid;
@@ -105,7 +109,7 @@ main {
   font-weight: bold;
   border: 1px solid grey;
 }
-main > div {
+.event-box {
   background-color:  	#213458;
   color: #f6e8e8;
   min-height: 10em;
@@ -119,6 +123,13 @@ main > div {
 .hero picture, .hero picture img {
   width: 100%;
   filter: brightness(75%);
+}
+img[data-src] {
+  filter: blur(.2em);
+}
+img.unblur {
+  filter: blur(0em);
+  transition: filter 2s;
 }
 .hero {
   overflow: hidden;
@@ -252,8 +263,8 @@ hr {
   clear: right;
   border: 1px solid white;
   max-width: 16em;
-  margin-top: 0em;
-  margin-left: 1.5em;
+  margin: 0;
+  padding: 0;
 }
 .weather .table {
   text-align: center;
@@ -288,6 +299,73 @@ hr {
 }
 .join {
   display: none;
+}
+/*
+.discover-grid {
+  background-color: #e6e6e6;
+  border: 1px solid grey;
+  margin: .5em;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.discover-grid h2 {
+  background-color: var(--white-oak-blue);
+  margin-top: 0px;
+  padding: .5em;
+}
+
+.discover-grid a {
+  color: blue;
+}
+
+.discover-grid p, .discover-grid a {
+  padding: 0px .5em;
+}
+
+.discover-grid img {
+  width: 100%;
+}
+.discover-grid .has-img {
+  border: 1px solid grey;
+  margin: .5em;
+}*/
+.discover-default-grid {
+  display: grid;
+  justify-items: center;
+}
+.discover-hero {
+  display: grid;
+  justify-items: center; 
+}
+.small-discover-grid {
+  display: grid;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.medium-and-large-discover-grid {
+  display: none;
+}
+.discover-picture-box {
+  display: grid;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 2em;
+  min-width: 0;
+}
+.discover-picture-box picture {
+  display: grid;
+  justify-items: center;
+}
+.discover-img {
+  margin: 0;
+  padding: 0;
+}
+.shadow {
+  border: 2px solid rgb(184, 184, 140);
+  box-shadow: 5px 5px 5px #A6AB7B
 }
 footer {
   display: grid;

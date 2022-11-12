@@ -34,7 +34,7 @@ header {
     justify-items: center;
     align-items: center;
 }
-  main {
+.index-grid {
     display: grid;
     grid-template-columns: 1fr 1.8fr 1fr;
     grid-template-areas:
@@ -52,9 +52,50 @@ header {
 .spotlight-div div {
     margin: 0;
 }
-.hero {
+.index-hero {
     width: 100%;
     height: 100%;
+}
+.discover-hero {
+    width: 60%;
+    height: auto;
+}
+
+.medium-and-large-discover-grid {
+    gap: 2em;
+}
+.discover-picture-grid {
+    gap: 5em;
+}
+.discover-info-grid {
+    gap: 2em;
+    grid-template-areas:
+    "i1"
+    "i2"
+    "i3"
+    "i4"
+    "shim"
+    "shim"
+    "shim"
+    "shim";
+}
+.i1 {
+    grid-area: i1;
+}
+.i2 {
+    grid-area: i2;
+}
+.i3 {
+    grid-area: i3;
+}
+.i4 {
+    grid-area: i4;
+}
+.shim {
+    grid-area: shim;
+}
+.discover-info-grid .event-box {
+    max-height: 16em;
 }
 .spotlight-div > :last-child {
     display: block;
