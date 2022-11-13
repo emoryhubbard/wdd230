@@ -74,10 +74,10 @@ header {
     "i2"
     "i3"
     "i4"
-    "shim"
-    "shim"
-    "shim"
-    "shim";
+    "."
+    "."
+    "."
+    ".";
 }
 .i1 {
     grid-area: i1;
@@ -90,9 +90,6 @@ header {
 }
 .i4 {
     grid-area: i4;
-}
-.shim {
-    grid-area: shim;
 }
 .discover-info-grid .event-box {
     max-height: 16em;
