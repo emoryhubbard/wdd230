@@ -103,6 +103,12 @@ header {
     justify-items: left;
     margin-left: 3rem;
 }
+.has-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas:
+    "form mem";
+}
 .spotlight-div > :last-child {
     display: block;
 }

@@ -456,7 +456,9 @@ form label.top input:required:valid, input:valid {
   margin: 1rem;
   border-radius: 10px;
 }
-
+.membership-box {
+  display: none;
+}
 footer {
   display: grid;
   justify-items: center;
