@@ -9,6 +9,7 @@ displayBanner();
 //debugEventBox();
 initializeImages();
 lazyLoad();
+setFormTime();
 //testSetSrcset();
 
 /*function testSetSrcset() {
@@ -183,6 +184,10 @@ function openDropDown() {
 
 function closeDropDown() {
     document.querySelector(".drop-down").style.display = "none";
+}
+
+function setFormTime() {
+    document.querySelector(".hidden-time").value = new Date().getTime();
 }
 
 
