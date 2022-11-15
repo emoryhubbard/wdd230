@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Join Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body>
+    <header>
+        <div class="logo-box">
+            <a href="#"><img class="header-logo" src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
+            <div>
+                <h1>White Oak</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="primary">
+            <ul>
+                <li class="page-link"><a href="#">Discover</a></li>
+                <li class="page-link"><a href="#">Directory</a></li>
+                <li class="page-link"><a href="#">Join</a></li>
+                <li class="page-link"><a href="#">Contact</a></li>
+            </ul>
+        </nav> 
+        <div class="social-box">
+            <a class="fb-logo" href="#">
+                <img class="social-logo" src="images/facebook.png" alt= "Facebook Logo">
+            </a>
+                <a href="#">
+                <img class="social-logo" src="images/twitter.png" alt= "Twitter Logo">
+            </a>
+        </div>
+        <div class="has-burger"><a class="burger-button" onclick="openDropDown()">☰</a></div>
+        <div id="date-div"><p>Placeholder</p></div>
+        <nav class="drop-down">
+            <a class="has-button" onclick="closeDropDown()">×</a>
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">🤝🏼 Come, meet and greet Wed at 7:00 p.m.!</div>
+    <main>
+        <!--<img class="join-img shadow" src="images/placeholder.webp" data-src="images/small-handshake.webp" width="320" height="187" alt="meeting in office">
+        -->
+        <div class="join-grid">
+            <div class="has-join-img">
+                <picture>
+                    <source srcset="images/medium-handshake2(2).webp" media="(min-width: 520px)
+                    and (max-width: 1009px)">
+                    <source srcset="images/medium-handshake2(2).webp" media="(min-width: 1010px)">
+                    <img class="event-box-shadow" src="images/small-handshake(1).webp" alt="meeting in office">
+                </picture>
+            <h2 class="membership">Membership</h2>
+            <h2 class="application">Application</h2>
+            </div>
+        </div>
+        
+        <div class="has-form">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="4431234567" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+                    <label class="top">Business Position Title <input type="text" name="position" pattern="[\sA-Za-z-]{1,}"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business Name* <input type="text" name="bname" required></label>
+                    <label class="top">Business Description <input type="textarea" name="bdescription"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Apply to White Oak Chamber">
+            </form>
+        </div>
+    </main>
+    <footer>
+            <a class="footer-logo" href="#"><img src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
+            <div class="address">
+                <p>White Oak Chamber of Commerce</p>
+                <p>11215 Oak Leaf Dr</p>
+                <p>Silver Spring, MD 20901</p>
+            </div>
+            <div class="contact">
+                <p>info@whiteoakchamber.com</p>
+                <p>(555) 202-1707</p>
+                <p>📍 Location Map</p>
+            </div>
+        <hr>
+        <ul class="bottom-line">
+            <li id="copyright"></li>
+            <li class="my-name">Emory D. Hubbard</li>
+            <li>WDD 230 Project</li>
+            <li id="update"></li>
+            <li>Last Visit: <span id="last-visit"></span> days ago</li>
+        </ul>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    </body>
+</html>

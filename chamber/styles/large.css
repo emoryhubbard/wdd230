@@ -94,6 +94,15 @@ header {
 .discover-info-grid .event-box {
     max-height: 16em;
 }
+.has-join-img {
+    display: grid;
+    justify-items: center;
+}
+.join-grid {
+    display: grid;
+    justify-items: left;
+    margin-left: 3rem;
+}
 .spotlight-div > :last-child {
     display: block;
 }
