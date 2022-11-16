@@ -459,6 +459,65 @@ form label.top input:required:valid, input:valid {
 .membership-box {
   display: none;
 }
+.has-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+.has-view img {
+  width: 6rem;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.grid-icon {
+  justify-self: end; /*#4a5568;*/
+}
+.list-icon {
+  justify-self: start;
+}
+.cards section h2 {
+  color: var(--white-oak-blue);
+  font-weight: 800;
+  font-family: "Mulish", sans-serif;
+}
+.cards section a {
+  color: var(--white-oak-blue);
+}
+.cards section a:hover {
+  color: blue;
+  transition: color .5s;
+}
+.cards section {
+  text-align: center;
+  width: 20rem;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0px 5px 20px 5px grey;
+}
+.cards section img {
+  width: 10rem;
+}
+.cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 1rem;
+  gap: .5rem;
+  background-color: rgb(240, 235, 235);
+  box-shadow: 10px 10px 10px 10px grey;
+  margin-bottom: 3rem;
+}
+td {
+  display: block;
+  margin: .4rem;
+}
+tbody tr:nth-child(even) {
+	background-color: rgb(227, 231, 239);
+}
+table {
+  border-spacing: 0 .5rem;
+}
 footer {
   display: grid;
   justify-items: center;

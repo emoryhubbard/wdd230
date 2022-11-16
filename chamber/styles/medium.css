@@ -130,6 +130,11 @@ form {
     text-align: left;
     font-size: .9rem;
 }
+td {
+    display: table-cell;
+    height: 5rem;
+    padding-left: 1rem;
+}
 footer {
     display: grid;
     grid-template-areas:

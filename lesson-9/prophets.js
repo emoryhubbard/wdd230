@@ -1,8 +1,8 @@
 var prophets = "";
 
-initializeProphetsObject();
+initializeProphets();
 
-function initializeProphetsObject() {
+function initializeProphets() {
     const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
     
     fetch(requestURL)
