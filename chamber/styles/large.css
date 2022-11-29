@@ -4,10 +4,21 @@ header {
     grid-template-areas:
     "lb pl pl pl sb"
     "up up up up up";
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow: hidden;
+}
+#date-div {
+    width: calc(100vw - 2rem);
+    position: relative;
+    left: -2rem;
 }
 .logo-box {
     margin: 0;
     padding: 0;
+}
+.social-box {
+    margin-left: 20em;
 }
 .has-burger {
     display: none;
@@ -39,8 +50,8 @@ header {
     grid-template-columns: 1fr 1.8fr 1fr;
     grid-template-areas:
     "event hero spot"
-    "weather join spot"
-    "news news spot";
+    "weather news spot"
+    ". join spot";
     gap: 1em;
 }
 .spotlight-div {
@@ -105,9 +116,18 @@ header {
 }
 .has-form {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "form mem";
+    justify-items: center;
+    gap: 8rem;
+}
+.join-main {
+    display: grid;
+    justify-items: center;
+}
+.has-membership-box {
+    margin-top: 5rem;
 }
 .spotlight-div > :last-child {
     display: block;

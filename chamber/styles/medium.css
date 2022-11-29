@@ -6,14 +6,15 @@
 }
 .header {
     grid-template-areas:
-    "lb lb lb lb lb sb bb"
-    "up up up up up up up";
+    "lb sb bb"
+    "up up up";
 }
 h1 {
     font-size: 1.5em;
 }
 .social-box {
-    margin-left: 20em;
+    margin-left: 1em;
+    justify-self: right;
 }
 .index-grid {
     display: grid;
@@ -81,12 +82,14 @@ h1 {
 }
 .join {
     grid-area: join;
-    display: block;
+    display: grid;
+    justify-items: center;
+    padding-top: 2rem;
 }
 .index-hero {
     grid-area: hero;
 }
-.index-news {
+.has-news {
     grid-area: news;
 }
 .spotlight-div {
@@ -130,10 +133,17 @@ form {
     text-align: left;
     font-size: .9rem;
 }
+.contact-box p {
+    font-size: 1rem;
+    margin: .5rem;
+  }
 td {
     display: table-cell;
     height: 5rem;
     padding-left: 1rem;
+}
+.grid-icon:hover, .list-icon:hover {
+    box-shadow: 0 0 50px #A6AB7B
 }
 footer {
     display: grid;
@@ -159,7 +169,7 @@ footer {
 .contact {
     grid-area: con;
 }
-.bottom-line {
+.has-bottom-line {
     grid-area: up;
 }
 .bottom-line li {

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="styles/large.css">
     </head>
     <body>
+    <div class="banner">🤝🏼 Come, meet and greet Wed at 7:00 p.m.!</div>
     <header>
         <div class="logo-box">
             <a href="index.html"><img class="header-logo" src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
@@ -24,48 +25,53 @@
                 <li class="page-link"><a href="discover.html">Discover</a></li>
                 <li class="page-link"><a href="directory.html">Directory</a></li>
                 <li class="page-link"><a href="join.html">Join</a></li>
-                <li class="page-link"><a href="#">Contact</a></li>
+                <li class="page-link"><a href="contact.html">Contact</a></li>
             </ul>
         </nav> 
         <div class="social-box">
-            <a class="fb-logo" href="#">
+            <a class="fb-logo" href="https://facebook.com">
                 <img class="social-logo" src="images/facebook.png" alt= "Facebook Logo">
             </a>
-                <a href="#">
+                <a href="https://twitter.com">
                 <img class="social-logo" src="images/twitter.png" alt= "Twitter Logo">
             </a>
         </div>
-        <div class="has-burger"><a class="burger-button" onclick="openDropDown()">☰</a></div>
+        <div class="has-burger"><a class="burger-button">☰</a></div>
         <div id="date-div"><p>Placeholder</p></div>
-        <nav class="drop-down">
-            <a class="has-button" onclick="closeDropDown()">×</a>
-            <ul>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <!--<a class="has-button" onclick="closeDropDown()">×</a>-->
+            <div class="drop-down">
+            <a id="discover-a" href="discover.html"><span>Discover</span></a>
+            <a href="directory.html"><span>Directory</span></a>
+            <a href="join.html"><span>Join</span></a>
+            <a id="contact-a" href="contact.html"><span>Contact</span></a>
+            </div>
     </header>
-    <div class="banner">🤝🏼 Come, meet and greet Wed at 7:00 p.m.!</div>
     <main class="index-grid">
         <div class="hero event-box index-hero">
             <picture>
+                <source srcset="images/shopping.webp" media="(min-width: 520px)
+                and (max-width: 1009px)">
+                <source srcset="images/shopping.webp" media="(min-width: 1010px)">
+                <img src="images/shopping-small.webp" alt="interior of shopping mall">
+            </picture>
+            <!--<picture>
                 <source srcset="images/heavy-medium(1).webp" media="(min-width: 520px)
                 and (max-width: 1009px)">
                 <source srcset="images/heavy-large(1).webp" media="(min-width: 1010px)">
                 <img src="images/heavy-small(1).webp" alt="meeting in office">
-            </picture>
+            </picture>-->
             <div class="hero-grid">
                 <h2>Welcome to White Oak</h2>
-                <div>Join Us</div>
+                <div><a class="join-us" href="join.html">Join Us</a></div>
             </div>
         </div>
-        <div class="event event-box index-event">
-            <h2>Grand Opening</h2>
-            <h3>🎲The Game Company</h3>
-            <p>Find your game at The Game Company, opening Friday at 1:00 p.m. with free pizza.</p>
-            <a href="#">learn more ...</a>
+        <div class="has-grand event-box-content-centerer">
+            <div class="grand-over event event-box index-event">
+                <h2>Grand Opening</h2>
+                <h3>🎲The Game Company</h3>
+                <p>Find your game at The Game Company, opening Friday at 1:00 p.m. with free pizza.</p>
+                <a href="directory.html">learn more ...</a>
+            </div>
         </div>
         <div class="weather event-box">
             <h2>Weather</h2>
@@ -80,14 +86,19 @@
                 <p><span id="cvalue">N/A</span></p>
             </div>
         </div>
-        <div class="news event-box index-news">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+        <div class="has-news event-box-content-centerer">
+            <div class="news-over news event-box index-news">
+                <h2>News Release</h2>
+                <p>The White Oak shopping center will soon have a Walmart Supercenter, which will occupy the same area as the current location previously occupied by Sears. The Sears, apart from its auto-care center, had closed its doors in 2018, but now new construction will begin on its former building in order to support the infrastructure for the new supercenter. The rest of the White Oak shopping center will remain accessible, as the Sears site was positioned on the far end of the shopping center adjacent to New Hampshire Ave.</p>                
+            </div>
         </div>
-        <div class="join event-box">Join</div>
+        <div class="join event-box">
+            <div><a class="join-us" href="join.html">Join Us</a></div>
+            <h3>Come discover the benefits of joining your chamber of commerce. Let us serve you!
+            </h3>
+        </div>
         <div class="spotlight-div event-box">
-            <div class="spotlight">
+            <div class="spotlight spotlight1">
                 <h2>The STEM Academy</h2>
                 <img src="images/ruler.png" alt="ruler image">
                 <p class="tag-line">"This summer, invest in their future"</p>
@@ -95,7 +106,7 @@
                 <p class="email">contact@stemacademy.com</p>
                 <p class="phone">555-555-5555 | stemacademy.com</p>
             </div>
-            <div class="spotlight">
+            <div class="spotlight spotlight2">
                 <h2>Colesville Garden</h2>
                 <img src="images/worm.png" alt="worm image">
                 <p class="tag-line">A public community garden with a fruitful harvest.</p>
@@ -103,7 +114,7 @@
                 <p class="email">contact@colesvillegarden.org</p>
                 <p class="phone">555-555-5555 | colesvillegarden.org</p>
             </div>
-            <div class="spotlight">
+            <div class="spotlight spotlight3">
                 <h2>Blaze Burgers</h2>
                 <img src="images/burger.png" alt="burger image">
                 <p class="tag-line">Awarded "Maryland's Biggest Burger"</p>
@@ -123,19 +134,21 @@
             <div class="contact">
                 <p>info@whiteoakchamber.com</p>
                 <p>(555) 202-1707</p>
-                <p>📍 Location Map</p>
+                <p>📍 <a href="https://goo.gl/maps/ZvQddQdktvc8HH2k9">Location Map</a></p>
             </div>
-        <hr>
-        <ul class="bottom-line">
-            <li id="copyright"></li>
-            <li class="my-name">Emory D. Hubbard</li>
-            <li>WDD 230 Project</li>
-            <li id="update"></li>
-            <li>Last Visit: <span id="last-visit"></span> days ago</li>
-            <li>Weather from <a href="https://openweathermap.org">openweathermap.org</a></li>
-        </ul>
+        <div class="has-bottom-line">
+            <ul class="bottom-line">
+                <li id="copyright"></li>
+                <li class="my-name"><span class="my-name-span">Emory D. Hubbard</span></li>
+                <li>WDD 230 Project</li>
+                <li id="update"></li>
+                <li>Last Visit: <span id="last-visit"></span> days ago</li>
+                <li>Weather from <a href="https://openweathermap.org">openweathermap.org</a></li>
+            </ul>
+        </div>
     </footer>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/set-weather.js"></script>
+    <script src="scripts/set-spotlights.js"></script>
     </body>
 </html>

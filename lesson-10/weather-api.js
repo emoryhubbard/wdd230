@@ -30,7 +30,7 @@ async function setWeather() {
   const long = -147.716675;
   const apiKey = "e2c86566d90dcbe864ff1270f6eb1f75";
   const url = `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${lat}&lon=${long}&appid=${apiKey}`;
-  //const coordinatesURL = "http://api.openweathermap.org/geo/1.0/direct?q=Fairbanks&units=imperial&appid=e2c86566d90dcbe864ff1270f6eb1f75";
+  //const coordinatesURL = `http://api.openweathermap.org/geo/1.0/direct?q=Fairbanks&units=imperial&appid=${apiKey}`;
 
   try {
     const response = await fetch(url);

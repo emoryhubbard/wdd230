@@ -1,6 +1,7 @@
 var images =[]; //global variables for lazy loading callback
 var observer;
 
+document.querySelector(".burger-button").addEventListener("click", openOrCloseDropDown);
 setDate();
 setCopyright();
 setUpdate();
@@ -23,6 +24,18 @@ lazyLoad();
     console.log(mainDivs);
     console.log(eventBoxes);
 }*/
+
+function openOrCloseDropDown() {
+    const anchor = document.querySelector(".has-burger a");
+        if (anchor.innerHTML == "☰") {
+            document.querySelector(".drop-down").style.display = "grid";
+            anchor.innerHTML = "X";
+        }
+        else {
+            document.querySelector(".drop-down").style.display = "none";
+            anchor.innerHTML = "☰";
+        }
+}
 
 function setDate() {
     let today = new Date();
@@ -177,13 +190,6 @@ function unblurImage(e) {
     image.classList.add("unblur");
 }
 
-function openDropDown() {
-    document.querySelector(".drop-down").style.display = "block";
-}
-
-function closeDropDown() {
-    document.querySelector(".drop-down").style.display = "none";
-}
 
 
 

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="styles/large.css">
     </head>
     <body>
+    <div class="banner">🤝🏼 Come, meet and greet Wed at 7:00 p.m.!</div>
     <header>
         <div class="logo-box">
             <a href="index.html"><img class="header-logo" src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
@@ -24,31 +25,28 @@
                 <li class="page-link"><a href="discover.html">Discover</a></li>
                 <li class="page-link"><a href="directory.html">Directory</a></li>
                 <li class="page-link"><a href="join.html">Join</a></li>
-                <li class="page-link"><a href="#">Contact</a></li>
+                <li class="page-link"><a href="contact.html">Contact</a></li>
             </ul>
         </nav> 
         <div class="social-box">
-            <a class="fb-logo" href="#">
+            <a class="fb-logo" href="https://facebook.com">
                 <img class="social-logo" src="images/facebook.png" alt= "Facebook Logo">
             </a>
-                <a href="#">
+                <a href="https://twitter.com">
                 <img class="social-logo" src="images/twitter.png" alt= "Twitter Logo">
             </a>
         </div>
-        <div class="has-burger"><a class="burger-button" onclick="openDropDown()">☰</a></div>
+        <div class="has-burger"><a class="burger-button">☰</a></div>
         <div id="date-div"><p>Placeholder</p></div>
-        <nav class="drop-down">
-            <a class="has-button" onclick="closeDropDown()">×</a>
-            <ul>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <!--<a class="has-button" onclick="closeDropDown()">×</a>-->
+            <div class="drop-down">
+            <a id="discover-a" href="discover.html"><span>Discover</span></a>
+            <a href="directory.html"><span>Directory</span></a>
+            <a href="join.html"><span>Join</span></a>
+            <a id="contact-a" href="contact.html"><span>Contact</span></a>
+            </div>
     </header>
-    <div class="banner">🤝🏼 Come, meet and greet Wed at 7:00 p.m.!</div>
-    <main>
+    <main class="join-main">
         <!--<img class="join-img shadow" src="images/placeholder.webp" data-src="images/small-handshake.webp" width="320" height="187" alt="meeting in office">
         -->
         <div class="join-grid">
@@ -92,46 +90,48 @@
             <div class="has-membership-box">
                 <div class="news event-box membership-box">
                     <h2>Gold Membership:</h2>
-                    <p>&#x2022 Free advertising on site home page</p>
-                    <p>&#x2022 Free weekly marketing workshops</p>
-                    <p>&#x2022 Free participation at all events</p>
+                    <p>&#x2022; Free advertising on site home page</p>
+                    <p>&#x2022; Free weekly marketing workshops</p>
+                    <p>&#x2022; Free participation at all events</p>
                     <h2>Silver Membership:</h2>
-                    <p>&#x2022 Discounted advertising on site home page</p>
-                    <p>&#x2022 Free monthly marketing workshops</p>
-                    <p>&#x2022 Discounted participation at all events</p>
+                    <p>&#x2022; Discounted advertising on site home page</p>
+                    <p>&#x2022; Free monthly marketing workshops</p>
+                    <p>&#x2022; Discounted participation at all events</p>
                     <h2>Bronze Membership:</h2>
-                    <p>&#x2022 Discounted participation at all events</p>
-                    <p>&#x2022 Free quarterly marketing workshops</p>
+                    <p>&#x2022; Discounted participation at all events</p>
+                    <p>&#x2022; Free quarterly marketing workshops</p>
                     <h2>NP Membership:</h2>
-                    <p>&#x2022 Same as Gold Membership</p>
-                    <p>&#x2022 Only available to non-profit organizations</p>
-                    <p>&#x2022 No fees</p>
+                    <p>&#x2022; Same as Gold Membership</p>
+                    <p>&#x2022; Only available to non-profit organizations</p>
+                    <p>&#x2022; No fees</p>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-            <a class="footer-logo" href="#"><img src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
-            <div class="address">
-                <p>White Oak Chamber of Commerce</p>
-                <p>11215 Oak Leaf Dr</p>
-                <p>Silver Spring, MD 20901</p>
-            </div>
-            <div class="contact">
-                <p>info@whiteoakchamber.com</p>
-                <p>(555) 202-1707</p>
-                <p>📍 Location Map</p>
-            </div>
-        <hr>
+        <a class="footer-logo" href="#"><img src="images/pinterest_profile_image.jpg" alt="Site Logo"></a>
+        <div class="address">
+            <p>White Oak Chamber of Commerce</p>
+            <p>11215 Oak Leaf Dr</p>
+            <p>Silver Spring, MD 20901</p>
+        </div>
+        <div class="contact">
+            <p>info@whiteoakchamber.com</p>
+            <p>(555) 202-1707</p>
+            <p>📍 <a href="https://goo.gl/maps/ZvQddQdktvc8HH2k9">Location Map</a></p>
+        </div>
+    <div class="has-bottom-line">
         <ul class="bottom-line">
             <li id="copyright"></li>
-            <li class="my-name">Emory D. Hubbard</li>
+            <li class="my-name"><span class="my-name-span">Emory D. Hubbard</span></li>
             <li>WDD 230 Project</li>
             <li id="update"></li>
             <li>Last Visit: <span id="last-visit"></span> days ago</li>
+            <li>Weather from <a href="https://openweathermap.org">openweathermap.org</a></li>
         </ul>
-    </footer>
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/join.js"></script>
-    </body>
+    </div>
+</footer>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/join.js"></script>
+</body>
 </html>

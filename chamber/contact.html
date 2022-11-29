@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Directory</title>
+        <title>Contact Us</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="favicon.ico">
@@ -46,12 +46,33 @@
             <a id="contact-a" href="contact.html"><span>Contact</span></a>
             </div>
     </header>
-    <main>
-        <div class="has-view">
-            <img class="grid-icon" src="images/new-grid.png" alt="grid view icon">
-            <img class="list-icon" src="images/list.png" alt="list view icon">
-        </div>
-        <div class="cards">
+    <main class="join-main">
+        <!--<img class="join-img shadow" src="images/placeholder.webp" data-src="images/small-handshake.webp" width="320" height="187" alt="meeting in office">
+        -->
+        <div class="has-form">
+            <form method="get" action="contact-thanks.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label class="top">Name* <input type="text" name="fname" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+                    <label class="top">Message <input type="text" name="message"></label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Send Message">
+            </form>
+            <div class="has-membership-box">
+                <div class="contact-box news event-box membership-box">
+                    <h2>Board of Directors</h2>
+                    <p>Jorge Alvarez</p>
+                    <p>Dennis Weyland</p>
+                    <p>Michael Camp</p>
+                    <p>Peace Gwira</p>
+                    <h2>White Oak Chamber of Commerce</h2>
+                    <p>info@whiteoakchamber.com</p>
+                    <p>(555) 202-1707</p>
+                    <p>11215 Oak Leaf Dr</p>
+                    <p>Silver Spring, MD 20901</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -78,6 +99,5 @@
     </div>
 </footer>
 <script src="scripts/scripts.js"></script>
-<script src="scripts/directory.js"></script>
 </body>
 </html>
