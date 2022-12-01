@@ -6,14 +6,25 @@
 
 h2 {
   color: white;
+  font-size: 2em;
+}
+
+h3 {
+  color: black;
+  font-size: 2em;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+strong {
+  font-style: normal;
+  font-size: 1.1rem;
 }
 
 li {
   font-size: .6em;
-}
-
-h2 {
-  font-size: 2em;
 }
 
 .body-note {
