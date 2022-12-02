@@ -23,6 +23,7 @@
   height: 100%;
   display: none;
   background-color: #2E5984;
+  box-shadow: 5px 5px 5px #999999;
   justify-items: center;
   align-items: center;
 }
