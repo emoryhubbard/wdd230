@@ -1,11 +1,11 @@
 setWeather();
 
 async function setWeather() {
-    const lat = 39.0398;
-    const long = -76.993;
+    const lat = 32.7174202;
+    const long = -117.1627728;
     const apiKey = "e2c86566d90dcbe864ff1270f6eb1f75";
     const url = `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${lat}&lon=${long}&appid=${apiKey}`;
-    //const url = "http://api.openweathermap.org/geo/1.0/direct?q=Fairbanks&units=imperial&appid=e2c86566d90dcbe864ff1270f6eb1f75";
+    //const url = "http://api.openweathermap.org/geo/1.0/direct?q=SanDiego&units=imperial&appid=e2c86566d90dcbe864ff1270f6eb1f75";
     //^ URL to get city coordinates
     try {
       const response = await fetch(url);
