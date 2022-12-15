@@ -5,13 +5,14 @@
     --bfoods-super-peach: #ECB8A5;
     --bfoods-purple: #904C77;
     --bfoods-pink: #E49AB0;
+    --cta-yellow: #f5e067;
 }
 * {
     font-family: "Quicksand", sans-serif;
 }
 
 body {
-    background-color: var(--bfoods-light-peach);
+    background-color: white;
     margin-bottom: 0rem;
 }
 header {
@@ -116,6 +117,9 @@ main {
     background-color: #f5e067;
     border-radius: 10px;
 }
+.product-right-grid p a {
+    text-decoration: none;
+}
 .weather-card {
     padding: 1rem;
     margin-left: 1rem;
@@ -158,6 +162,9 @@ main {
 .peach-background {
     background-color: var(--bfoods-light-peach);
     margin-top: -.24rem;
+    position: relative;
+    z-index: 9999;
+    padding-bottom: 2rem;
 }
 .weather-bottom-grid {
     display: grid;
@@ -186,6 +193,49 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px #603f30;
+}
+.form-card {
+    position: relative;
+    z-index: 99999;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+    margin-bottom: -8rem;
+}
+.form-card label {
+    display: block;
+}
+.form-card label * {
+    display: block;
+    margin-bottom: .5rem;
+}
+.form-card fieldset:nth-child(1) {
+    margin-bottom: 1rem;
+}
+.form-card legend {
+    font-weight: 500;
+}
+.form-card fieldset:nth-child(2) label {
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+.form-card fieldset:nth-child(2) label select {
+    background-color: #eee5b0
+}
+.form-card fieldset:nth-child(3) {
+    border: none;
+}
+.submit-button {
+    margin-top: 1rem;
+    background-color: var(--cta-yellow);
+    padding: .5rem;
+    border-radius: 10px;
+    font-weight: 700;
 }
 footer {
     background-color: var(--bfoods-purple);

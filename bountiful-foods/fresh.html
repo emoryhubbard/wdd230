@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Bountiful Foods Home Page</title>
+        <title>Mix Fruit Drink</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="favicon.ico">
@@ -26,17 +26,47 @@
             <img class="insta-icon" src="images/insta-icon.png">
         </header>
 		<main>
-            <div class="product-grid">
-                <div class="product-left-grid">
-                    <p>Specialty Fruits</p>
-                    <p>Produce</p>
-                    <p class="fruit-drinks">Fruit Drinks</p>
-                </div>
-                <div class="product-right-grid">
-                    <p><a href="fresh.html">Create Drink</a></p>
-                </div>
+            <!--The Fresh page contains a form that allows the user to build a specialty drink.
+
+            The form requires the following items: 
+                first name,
+                email,
+                phone, 
+                three (3) select inputs that are populated with the available fruit to put into a drink. Available fruit options must only come from this JSON data source: FRUIT 
+        
+        Links to an external site. for full credit consideration.
+        and, include an area that allows them to add special instructions if needed.-->
+            <div class="form-card">
+                <h2>Order your own specialty fruit drink mix here.</h2>
+                <form method="Get">
+                    <fieldset>
+                        <legend>Your Contact Info</legend>
+                        <label class="top">First Name<input name="fname" type="text"></input></label>
+                        <label class="top">Email<input name="email" type="text"></label>
+                        <label class="top">Phone*<input name="tel" type="text" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mix Three Fruits</legend>
+                        <label class="top">
+                            <select class="fruit1" name="fruit1"> 
+                                <option value="">Select</option>
+                            </select>
+                        </label>
+                        <label class="top">
+                            <select class="fruit2" name="fruit2"> 
+                                <option value="">Select</option>
+                            </select>
+                        </label>
+                        <label class="top"> 
+                            <select class="fruit3" name="fruit3">
+                                <option value="">Select</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset><input class="submit-button" type="submit" value="Place Order"></fieldset>
+                </form>
             </div>
-			<img class="fruit-background" src="images/fruit-background.webp">
+			<img class="fruit-background fresh-background" src="images/fruit-background.webp">
             <div class="wavy-div">
                 <svg class="wavy-svg" viewBox="0 0 500 150" preserveAspectRation="none">
                     <path d="M0.00,49.85 C150.00,149.60 350.85,-49.85 500.00,49.85 L500.00,149.60 L0.00,149.60 Z"></path>
@@ -101,5 +131,6 @@
         </footer>
 	   <script src="scripts/scripts.js"></script>
        <script src="scripts/set-weather.js"></script>
+       <script src="scripts/set-form.js"></script>
     </body>
 </html>
