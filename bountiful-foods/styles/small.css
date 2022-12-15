@@ -36,13 +36,19 @@ header {
 .link:hover {
    color: rgb(58, 52, 52);
 }
-.link a {
+a.link {
     text-decoration: none;
     color: black;
 }
 .link {
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: inherit;
 }
 .bf-logo {
     font-size: 1.5rem;
