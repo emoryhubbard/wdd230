@@ -182,5 +182,13 @@ footer {
 }
 .footer-top-grid {
     display: grid;
-    
+    grid-template-columns: 1fr 1fr;
+}
+.footer-list li {
+    display: inline;
+    list-style-type: none;
+    font-size: .9em;
+}
+.footer-list li:not(:first-child):before {
+    content: " | ";
 }
