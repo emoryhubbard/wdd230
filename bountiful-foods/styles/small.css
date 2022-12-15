@@ -28,6 +28,21 @@ header {
     font-size: 2.5rem;
     padding: 1rem;
     justify-self: left;
+    cursor: pointer;
+}
+.burger-button:hover {
+    color: rgb(58, 52, 52);
+}
+.link:hover {
+   color: rgb(58, 52, 52);
+}
+.link a {
+    text-decoration: none;
+    color: black;
+}
+.link {
+    text-decoration: none;
+    color: black;
 }
 .bf-logo {
     font-size: 1.5rem;
@@ -50,6 +65,16 @@ header {
 }
 header img {
     padding-right: 1em;
+}
+.dropdown-nav {
+    display: none;
+    padding: 1rem;
+    background-color: var(--bfoods-purple);
+    width: 15rem;
+    border: 3px black solid;
+    border-top: none;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 .fruit-background {
     padding-top: 5rem;
@@ -119,6 +144,7 @@ main {
 }
 .product-right-grid p a {
     text-decoration: none;
+    color: #470f33;
 }
 .weather-card {
     padding: 1rem;
@@ -268,6 +294,48 @@ main {
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px #603f30;
     margin-bottom: -8rem;
+}
+.about-card {
+    position: relative;
+    z-index: 99999;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+    margin-bottom: -8rem;
+}
+.location-card {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+    width: 18rem;
+}
+.contact-card {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+    padding-bottom: 2rem;
+}
+.contact-head {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.contact-card p:not(.contact-head) {
+    padding: 0; margin: 0;
 }
 footer {
     background-color: var(--bfoods-purple);
