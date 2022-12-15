@@ -41,9 +41,9 @@
                 <form method="Get">
                     <fieldset>
                         <legend>Your Contact Info</legend>
-                        <label class="top">First Name<input name="fname" type="text"></input></label>
-                        <label class="top">Email<input name="email" type="text"></label>
-                        <label class="top">Phone*<input name="tel" type="text" required></label>
+                        <label class="top">First Name<input class="first-name" name="fname" type="text"></input></label>
+                        <label class="top">Email<input class="email" name="email" type="text"></label>
+                        <label class="top">Phone*<input class="phone" name="tel" type="text" required></label>
                     </fieldset>
                     <fieldset>
                         <legend>Mix Three Fruits</legend>
@@ -62,9 +62,38 @@
                                 <option value="">Select</option>
                             </select>
                         </label>
+                    <fieldset>
+                        <legend>Special Instructions</legend>
+                        <textarea name="textarea"></textarea>
+                    </fieldset>
                     </fieldset>
                     <fieldset><input class="submit-button" type="submit" value="Place Order"></fieldset>
                 </form>
+            </div>
+            <!--
+    the input values of the order
+    (7 inputs = first name, email, phone, three selected fruits,
+    and special instructions), the order date, and 
+    the total amount of carbohydrates, protein, fat, sugar, and calories
+    based upon the three fruit choices selected on the form. Again, use the JSON fruit data to extract and sum up that information.
+-->
+            <div class="confirm-card">
+                <h2>Order Placed For</h2>
+                <p class="cfirst-name">Emory</p>
+                <p class="cemail">randomemail@gmail.com</p>
+                <p class="cphone">(123) 454-4747</p>
+                <p>12/14/2022</p>
+                <h2>Order Instructions</h2>
+                <p class="cfruit1">Apple</p>
+                <p class="cfruit2">Blueberry</p>
+                <p class="cfruit3">Tomato</p>
+                <p class="cinstructions">Use an overwhleming amount of tomato, since that is the most outrageous excuse for a fruit known to man.</p>
+                <h2>Nutrition Estimate</h2>
+                <p><span class="ccarbohydrates">80</span>g Carbohydrates</p>
+                <p><span class="cprotein">10</span>g Protein</p>
+                <p><span class="cfat">5</span>g Fat</p>
+                <p><span class="csugar">10</span>g Sugar</p>
+                <p><span class="ccalories">200</span> Calories</p>
             </div>
 			<img class="fruit-background fresh-background" src="images/fruit-background.webp">
             <div class="wavy-div">

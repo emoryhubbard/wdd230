@@ -195,6 +195,7 @@ main {
     box-shadow: 10px 10px 10px 10px #603f30;
 }
 .form-card {
+    display: block;
     position: relative;
     z-index: 99999;
     padding: 1rem;
@@ -236,6 +237,37 @@ main {
     padding: .5rem;
     border-radius: 10px;
     font-weight: 700;
+}
+/*            <div class="confirm-card">
+                <h2>Order Info</h2>
+                <p>Emory</p>
+                <p>randomemail@gmail.com</p>
+                <p>(123) 454-4747</p>
+                <p>12/14/2022</p>
+                <h2>Order Instructions</h2>
+                <p>Apple</p>
+                <p>Blueberry</p>
+                <p>Tomato</p>
+                <h2>Nutrition Facts</h2>
+                <p><span>80</span>g Carbohydrates</p>
+                <p><span>10</span>g Protein</p>
+                <p><span>5</span>g Fat</p>
+                <p><span>10</span>g Sugar</p>
+                <p><span>200</span> Calories</p>
+            </div>*/
+.confirm-card {
+    display: none;
+    position: relative;
+    z-index: 99999;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+    margin-bottom: -8rem;
 }
 footer {
     background-color: var(--bfoods-purple);
