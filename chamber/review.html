@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><!--OR en-US-->
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="favicon" href="favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <title>My web page</title>
+    </head>
+    <body>
+        <header>My header</header>
+        <main>
+            Bunch of body elements go here
+            <table>
+                <tr>
+                    <td>
+                        Something
+                    </td>
+                    <td>
+                        Something2
+                    </td>
+                    <td>
+                        SOmething3
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2Something
+                    </td>
+                    <td>
+                        3Something
+                    </td>
+                    <td>
+                        4Something
+                    </td>
+                </tr>
+            </table>
+            <form method="Get" action="thanks.html">
+                <fieldset>
+                    <legend>First Group</legend>
+                    <label class="top">Your Position*<input name="position" type="text" pattern="[\sA-Za-z-]{7,}" required></label>
+                    <label class="top">First Name*<input name="fname" type="text" placeholder="John Doe" required></label>
+                    <legend>My radio button</legend>
+                    <label class="sbs">NOT HERE! AFTER INPUT (for flow) <input name="myradio" value="first">First Choice</label>
+                    other input names: fname, lname, email, tel
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Submit">
+                <input class="hidden" type="hidden-time" value="">
+                HTML bullet: &#x2022;
+            </form>
+        </main>
+        <footer>Anything I want in footer</footer>
+    </body>
+    <script src="scripts.js"></script>
+</html>

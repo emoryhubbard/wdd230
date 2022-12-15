@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+:root {
+    --bfoods-light-peach: #ECCFC3;
+    --bfoods-super-peach: #ECB8A5;
+    --bfoods-purple: #904C77;
+    --bfoods-pink: #E49AB0;
+}
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: var(--bfoods-light-peach);
+    margin-bottom: 0rem;
+}
+header {
+    display: grid;
+    background-color: var(--bfoods-purple);
+    grid-template-columns: 1fr 2fr .5fr .5fr .5fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+
+}
+.burger-button {
+    font-size: 2.5rem;
+    padding: 1rem;
+    justify-self: left;
+}
+.bf-logo {
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1rem;
+    justify-self: left;
+}
+.b-span {
+    font-size: 2.5rem;
+    font-family: 'Comfortaa', sans-serif;
+}
+.bf-bottom {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+header img {
+    padding-right: 1em;
+}
+.fruit-background {
+    padding-top: 5rem;
+    max-width: 100%;
+    background-color: white;
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
+
+}
+main {
+    background-color: white;
+    position: relative;
+    margin-bottom: 0rem;
+}
+.wavy-div {
+    height: 150px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    margin-top: -3rem;
+    z-index: 99999;
+}
+.wavy-svg {
+    stroke: none;
+    fill: var(--bfoods-light-peach);
+    z-index: 99999;
+}
+.product-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+.product-left-grid p:not(.fruit-drinks) {
+    font-size: 1.5rem;
+    padding-left: 1rem; /*same as burger button for alignment*/
+    color: #470f33;
+    font-weight: 400;
+}
+.fruit-drinks {
+    font-size: 1.5rem;
+    padding-left: 1rem; /*same as burger button for alignment*/
+    font-weight: 700;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.product-right-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.product-right-grid p {
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-right: 1rem; /*to stay aligned with instagram icon at top*/
+    padding: 1rem;
+    background-color: #f5e067;
+    border-radius: 10px;
+}
+.weather-card {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+    max-width: 18rem;
+    max-height: 18rem;
+}
+.weather-top-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.weather-top-left-grid {
+    display: grid;
+    font-size: 1.25rem;
+}
+.responsive-square {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.weather-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.peach-background {
+    background-color: var(--bfoods-light-peach);
+    margin-top: -.24rem;
+}
+.weather-bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+.weather-bottom-grid div {
+    display: grid;
+}
+.weather-bottom-grid div p {
+    font-size: 1.5rem;
+}
+.info-card {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+}
+footer {
+    background-color: var(--bfoods-purple);
+    margin-bottom: 0rem;
+}
+.footer-bf-logo {
+    display: grid;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1rem;
+    justify-items: center;
+}
+.footer-top-grid {
+    display: grid;
+    
+}
