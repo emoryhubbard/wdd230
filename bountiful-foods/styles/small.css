@@ -226,6 +226,16 @@ main {
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px #603f30;
 }
+.drinks-card {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 3rem;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #603f30;
+}
 .form-card {
     display: block;
     position: relative;
@@ -261,6 +271,9 @@ main {
     background-color: #eee5b0
 }
 .form-card fieldset:nth-child(3) {
+    border: none;
+}
+.has-submit {
     border: none;
 }
 .submit-button {

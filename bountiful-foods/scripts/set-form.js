@@ -77,6 +77,7 @@ async function setForm(fruits) {
         
         document.querySelector(".form-card").style.display = "none";
         document.querySelector(".confirm-card").style.display = "block";
+        addDrinkToLocalStorage();
     });
  }
  function addNutritions(tn, n) {
@@ -109,7 +110,12 @@ async function setForm(fruits) {
 function ds(selector) {
     return document.querySelector(selector);
 }
-function dsp(selector) {
-    return document.querySelector(`.confirm-card p:nth-child(${selector})`);
+function addDrinkToLocalStorage() {
+    if (localStorage.drinks==null) {
+        localStorage.drinks = 1;
+    }
+    else {
+        localStorage.drinks = parseInt(localStorage.drinks) + 1;
+    }
 }
 
