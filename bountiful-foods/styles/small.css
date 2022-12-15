@@ -226,6 +226,9 @@ main {
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px #603f30;
 }
+.info-card2 {
+    display: none;
+}
 .drinks-card {
     padding: 1rem;
     margin-left: 1rem;
